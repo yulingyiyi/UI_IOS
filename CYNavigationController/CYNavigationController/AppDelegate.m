@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "CYNavigationViewController.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CYNavigationViewController *nav = [[CYNavigationViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 
