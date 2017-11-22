@@ -10,6 +10,6 @@
 #define KScreen_W [UIScreen mainScreen].bounds.size.width
 #define NavBarHeight ((SCREEN_H >= 812) ? 88 : 64)
 
-@interface CYNavigationBar : UIView
+@interface CYNavigationBar : UINavigationBar
 
 @end
