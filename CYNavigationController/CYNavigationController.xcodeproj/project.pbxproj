@@ -18,6 +18,8 @@
 		1841A6741FBD1DDA00EAEBE8 /* CYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A6731FBD1DDA00EAEBE8 /* CYNavigationBar.m */; };
 		1841A6771FBD1E0A00EAEBE8 /* CYNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A6761FBD1E0A00EAEBE8 /* CYNavigationViewController.m */; };
 		1841A67A1FBD1E3800EAEBE8 /* UIViewController+navigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A6791FBD1E3800EAEBE8 /* UIViewController+navigationBar.m */; };
+		6E0FE2F51FBDB57600687D7F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FE2F41FBDB57600687D7F /* back.png */; };
+		6E0FE2F81FBDCBD800687D7F /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FE2F71FBDCBD800687D7F /* ViewController1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		1841A6761FBD1E0A00EAEBE8 /* CYNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNavigationViewController.m; sourceTree = "<group>"; };
 		1841A6781FBD1E3800EAEBE8 /* UIViewController+navigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+navigationBar.h"; sourceTree = "<group>"; };
 		1841A6791FBD1E3800EAEBE8 /* UIViewController+navigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+navigationBar.m"; sourceTree = "<group>"; };
+		6E0FE2F41FBDB57600687D7F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		6E0FE2F61FBDCBD800687D7F /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		6E0FE2F71FBDCBD800687D7F /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,8 @@
 				1841A6401FBD1D7600EAEBE8 /* AppDelegate.m */,
 				1841A6421FBD1D7600EAEBE8 /* ViewController.h */,
 				1841A6431FBD1D7600EAEBE8 /* ViewController.m */,
+				6E0FE2F61FBDCBD800687D7F /* ViewController1.h */,
+				6E0FE2F71FBDCBD800687D7F /* ViewController1.m */,
 				1841A6451FBD1D7600EAEBE8 /* Main.storyboard */,
 				1841A6481FBD1D7600EAEBE8 /* Assets.xcassets */,
 				1841A64A1FBD1D7600EAEBE8 /* LaunchScreen.storyboard */,
@@ -151,6 +158,7 @@
 				1841A6761FBD1E0A00EAEBE8 /* CYNavigationViewController.m */,
 				1841A6781FBD1E3800EAEBE8 /* UIViewController+navigationBar.h */,
 				1841A6791FBD1E3800EAEBE8 /* UIViewController+navigationBar.m */,
+				6E0FE2F41FBDB57600687D7F /* back.png */,
 			);
 			path = CYNavigationController;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0FE2F51FBDB57600687D7F /* back.png in Resources */,
 				1841A64C1FBD1D7600EAEBE8 /* LaunchScreen.storyboard in Resources */,
 				1841A6491FBD1D7600EAEBE8 /* Assets.xcassets in Resources */,
 				1841A6471FBD1D7600EAEBE8 /* Main.storyboard in Resources */,
@@ -289,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1841A6441FBD1D7600EAEBE8 /* ViewController.m in Sources */,
+				6E0FE2F81FBDCBD800687D7F /* ViewController1.m in Sources */,
 				1841A6741FBD1DDA00EAEBE8 /* CYNavigationBar.m in Sources */,
 				1841A67A1FBD1E3800EAEBE8 /* UIViewController+navigationBar.m in Sources */,
 				1841A64F1FBD1D7600EAEBE8 /* main.m in Sources */,

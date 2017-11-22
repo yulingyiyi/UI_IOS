@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CYNavigationBar.h"
+#import "UIViewController+navigationBar.h"
+@interface CYNavigationViewController : UINavigationController<UIGestureRecognizerDelegate>
 
-@interface CYNavigationViewController : UINavigationController
-
+@property(nonatomic, strong) CYNavigationBar *barView;
 @end
