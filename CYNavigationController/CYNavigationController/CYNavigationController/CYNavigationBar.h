@@ -12,20 +12,8 @@
 #define NavBarHeight ((KScreen_H >= 812) ? 88 : 64)
 
 @interface CYNavigationBar : UINavigationBar
++ (CYNavigationBar *)defaultNavigitionBar;
 
-//@property (nonatomic, strong) CACradein/e
-
-@property(nonatomic,strong) UILabel *titleLabel;
-@property(nonatomic, copy) NSString *title;
-
-
-
-@property(nonatomic, strong) UIButton *backBtn;
-@property(nonatomic, strong) UIButton *leftBtn;
-@property(nonatomic, strong) UIButton *rightBtn;
-@property(nonatomic, strong) UIView   *lineView;
-
-
-@property(nonatomic, strong) UIView *titleView;
+@property (strong) UINavigationItem *navigationItem;
 
 @end

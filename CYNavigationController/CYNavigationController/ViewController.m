@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    
+    self.title = @"first";
     btn.frame = CGRectMake(10, 100, 50, 50);
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(dddd) forControlEvents:UIControlEventTouchUpInside];
@@ -27,6 +27,7 @@
 
 - (void)dddd{
     ViewController1 *v = [[ViewController1 alloc] init];
+    v.title= @"sect";
     [self.navigationController pushViewController:v animated:YES];
 }
 - (void)didReceiveMemoryWarning {

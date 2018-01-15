@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AliyunVideoCore/frameworks" "${PODS_ROOT}/VODUpload/frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AliyunOSSiOS" "${PODS_ROOT}/Headers/Public/AliyunVideoCore" "${PODS_ROOT}/Headers/Public/VODUpload"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AliyunOSSiOS"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AliyunOSSiOS" -isystem "${PODS_ROOT}/Headers/Public/AliyunVideoCore" -isystem "${PODS_ROOT}/Headers/Public/VODUpload"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AliyunOSSiOS" -l"resolv" -framework "AVFoundation" -framework "AliyunVideoCore" -framework "MobileCoreServices" -framework "SystemConfiguration" -framework "UIKit" -framework "VODUpload"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

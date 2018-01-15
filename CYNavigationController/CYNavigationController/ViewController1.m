@@ -7,7 +7,6 @@
 //
 
 #import "ViewController1.h"
-#import "UIViewController+navigationBar.h"
 @interface ViewController1 ()
 
 @end
@@ -16,10 +15,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationBarBackgroundColor = [UIColor blueColor];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"sec";
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    
     btn.frame = CGRectMake(10, 100, 50, 50);
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(dddd) forControlEvents:UIControlEventTouchUpInside];
@@ -28,7 +26,7 @@
 }
 
 - (void)dddd{
-    self.navigationBarBackgroundColor = [UIColor colorWithRed:round(255) / 255.0 green:round(255) / 255.0 blue:round(255) / 255.0 alpha:1];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

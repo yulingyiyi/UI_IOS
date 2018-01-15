@@ -9,71 +9,44 @@
 #import "UIViewController+navigationBar.h"
 #import <objc/runtime.h>
 
+static char navigationBar;
+//static char title;
 @implementation UIViewController (navigationBar)
 //static char bacButtonImageKey;
 
-@dynamic navigationBar;
-@dynamic navigationBarHidden;
-@dynamic title;
-@dynamic leftBarHidden;
-@dynamic navigationBarBackgroundColor;
-@dynamic barBottomLineBackgroundColor;
+//@dynamic navigationBar;
+#pragma mark -- getter setter
 - (CYNavigationBar *)navigationBar{
-    return objc_getAssociatedObject(self, _cmd);
+    CYNavigationBar *nav = objc_getAssociatedObject(self, &navigationBar);
+    if (!nav) {
+        return [CYNavigationBar defaultNavigitionBar];
+    }
+    return nav;
 }
 - (void)setNavigationBar:(CYNavigationBar *)navigationBar{
-    objc_setAssociatedObject(self, @selector(navigationBar), navigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &navigationBar, navigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-- (BOOL)isNavigationBar{
-    return [objc_getAssociatedObject(self, _cmd) boolValue];
+-(UINavigationItem *)navigationItem{
+        return self.navigationBar.navigationItem;
 }
-- (void)setNavigationBarHidden:(BOOL)navigationBarHidden{
-    objc_setAssociatedObject(self, @selector(isNavigationBar), @(navigationBarHidden), OBJC_ASSOCIATION_ASSIGN);
+//- (void)setTitle:(NSString *)title{
+//    objc_setAssociatedObject(self, &title, title, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//}
+//- (NSString *)title{
+//   return  objc_getAssociatedObject(self, &title);
+//}
+
+-(void)addSubView:(UIView *)view{
+    if ([self.view.subviews containsObject:self.navigationBar]) {
+        [self.view insertSubview:view belowSubview:self.navigationBar];
+    }else{
+        [self.view addSubview:view];
+    }
 }
 
-- (void)setLeftBarHidden:(BOOL)leftBarHidden{
-    if (leftBarHidden) {
-//
-        self.navigationBar.leftBtn.hidden = YES;
-        CGRect rect = self.navigationBar.backBtn.frame;
-        
-        self.navigationBar.backBtn.frame = CGRectMake(20, rect.origin.y, 75, rect.size.height);
-        [self.navigationBar.backBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
-        [self.navigationBar.backBtn setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
- 
-    }else{
-        self.navigationBar.leftBtn.hidden = NO;
-        CGRect rect = self.navigationBar.backBtn.frame;
-        
-        self.navigationBar.backBtn.frame = CGRectMake(0, rect.origin.y, 52, rect.size.height);
-        [self.navigationBar.backBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
-        [self.navigationBar.backBtn setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
-    }
-    objc_setAssociatedObject(self, @selector(leftBarHidden), @(leftBarHidden), OBJC_ASSOCIATION_ASSIGN);
-    
-}
-- (BOOL)leftBarHidden{
-    return [objc_getAssociatedObject(self, _cmd) boolValue];
-}
--(NSString *)title{
-    return objc_getAssociatedObject(self, _cmd);
-}
--(void)setTitle:(NSString *)title{
-    objc_setAssociatedObject(self, @selector(title), title, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
--(UIColor *)navigationBarBackgroundColor{
-    return objc_getAssociatedObject(self, _cmd);
-}
-- (void)setNavigationBarBackgroundColor:(UIColor *)navigationBarBackgroundColor{
-    objc_setAssociatedObject(self,@selector(navigationBarBackgroundColor), navigationBarBackgroundColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    self.navigationBar.backgroundColor = navigationBarBackgroundColor;
-}
-- (UIColor *)barBottomLineBackgroundColor{
-    return objc_getAssociatedObject(self, _cmd);
-}
-- (void)setBarBottomLineBackgroundColor:(UIColor *)barBottomLineBackgroundColor{
-    objc_setAssociatedObject(self, @selector(barBottomLineBackgroundColor), barBottomLineBackgroundColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
+
+
+#pragma mark -- view
 
 
 

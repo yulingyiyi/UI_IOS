@@ -23,7 +23,10 @@ SingletionH(RouterNavgation)
  返回当前的导航控制期
  */
 - (UINavigationController *)currentNavigationViewController;
-
+/**
+ 返回根导航控制器
+ */
+- (UIViewController*)rootNavigationViewController;
 
 #pragma mark --
 

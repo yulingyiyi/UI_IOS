@@ -109,13 +109,13 @@ SingletionM(Router)
 + (void)dismissViewControllerWithTimes:(NSUInteger)times animated: (BOOL)animated completion: (void (^ __nullable)(void))completion {
     [RouterNavgation dismissViewControllerWithTimes:times animated:animated completion:completion];
 }
-
 + (void)dismissToRootViewControllerAnimated: (BOOL)animated completion: (void (^ __nullable)(void))completion {
     [RouterNavgation dismissToRootViewControllerAnimated:animated completion:completion];
 }
-
-
 #pragma mark --
++ (UIViewController *)RootNavigationViewController{
+    return [[RouterNavgation sharedRouterNavgation] rootNavigationViewController];
+}
 + (UIViewController *)currentViewControler{
     return [[RouterNavgation sharedRouterNavgation] currentViewController];
 }

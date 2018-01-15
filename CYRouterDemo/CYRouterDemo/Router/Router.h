@@ -15,18 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 SingletionH(Router)
 /** 存储读取的plist文件数据 */
 @property(nonatomic,strong) NSDictionary *config;
-
 + (void )loadConfig;
 
 /** *******************获取当前控制器 ************************/
 + (UIViewController *)currentViewControler;
-
-
++ (UINavigationController*)rootNavigationViewController;
 
 #pragma mark --------  拿到导航控制器 和当前控制器 --------
-
 /** 返回当前控制器 */
-- (UIViewController*)currentViewController;
+- (UINavigationController*)currentViewController;
 
 /** 返回当前控制器的导航控制器 */
 - (UINavigationController*)currentNavigationViewController;
