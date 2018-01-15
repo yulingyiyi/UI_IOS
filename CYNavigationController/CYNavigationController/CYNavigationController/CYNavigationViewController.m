@@ -18,9 +18,6 @@
     [super loadView];
     [self creatBarView];
     [self popGesture];
-    
-    
-    
 }
 - (void)creatBarView{
     

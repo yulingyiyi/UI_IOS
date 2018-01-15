@@ -11,11 +11,10 @@
 #define KScreen_H [UIScreen mainScreen].bounds.size.height
 #define NavBarHeight ((KScreen_H >= 812) ? 88 : 64)
 
-@interface CYNavigationBar : UIView
+@interface CYNavigationBar : UINavigationBar
 
-//@property (nonatomic, strong) CACradein/e
-
-@property(nonatomic,strong) UILabel *titleLabel;
+@property(nonatomic, strong) UINavigationItem *navigationItem;
+@property(nonatomic, strong) UILabel *titleLabel;
 @property(nonatomic, copy) NSString *title;
 
 

@@ -30,10 +30,15 @@
 - (void)setNavigationBarHidden:(BOOL)navigationBarHidden{
     objc_setAssociatedObject(self, @selector(isNavigationBar), @(navigationBarHidden), OBJC_ASSOCIATION_ASSIGN);
 }
-
+- (void)addSubView:(UIView *)view{
+    if (self.navigationBar && [self.self.view.subviews containsObject:self.navigationBar]) {
+        [self.view insertSubview:view belowSubview:self.navigationBar];
+    }else{
+        [self.view addSubview:view];
+    }
+}
 - (void)setLeftBarHidden:(BOOL)leftBarHidden{
     if (leftBarHidden) {
-//
         self.navigationBar.leftBtn.hidden = YES;
         CGRect rect = self.navigationBar.backBtn.frame;
         
@@ -60,6 +65,7 @@
 }
 -(void)setTitle:(NSString *)title{
     objc_setAssociatedObject(self, @selector(title), title, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    self.navigationBar.topItem.title = title;
 }
 -(UIColor *)navigationBarBackgroundColor{
     return objc_getAssociatedObject(self, _cmd);
