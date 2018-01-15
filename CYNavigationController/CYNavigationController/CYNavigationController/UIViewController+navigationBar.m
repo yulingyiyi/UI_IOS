@@ -9,27 +9,27 @@
 #import "UIViewController+navigationBar.h"
 #import <objc/runtime.h>
 
+static char navigationBar;
+//static char title;
 @implementation UIViewController (navigationBar)
 //static char bacButtonImageKey;
 
-@dynamic navigationBar;
-@dynamic navigationBarHidden;
-@dynamic title;
-@dynamic leftBarHidden;
-@dynamic navigationBarBackgroundColor;
-@dynamic barBottomLineBackgroundColor;
+//@dynamic navigationBar;
+#pragma mark -- getter setter
 - (CYNavigationBar *)navigationBar{
-    return objc_getAssociatedObject(self, _cmd);
+    CYNavigationBar *nav = objc_getAssociatedObject(self, &navigationBar);
+    if (!nav) {
+        return [CYNavigationBar defaultNavigitionBar];
+    }
+    return nav;
 }
 - (void)setNavigationBar:(CYNavigationBar *)navigationBar{
-    objc_setAssociatedObject(self, @selector(navigationBar), navigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &navigationBar, navigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-- (BOOL)isNavigationBar{
-    return [objc_getAssociatedObject(self, _cmd) boolValue];
+-(UINavigationItem *)navigationItem{
+        return self.navigationBar.navigationItem;
 }
-- (void)setNavigationBarHidden:(BOOL)navigationBarHidden{
-    objc_setAssociatedObject(self, @selector(isNavigationBar), @(navigationBarHidden), OBJC_ASSOCIATION_ASSIGN);
-}
+<<<<<<< HEAD
 - (void)addSubView:(UIView *)view{
     if (self.navigationBar && [self.self.view.subviews containsObject:self.navigationBar]) {
         [self.view insertSubview:view belowSubview:self.navigationBar];
@@ -46,14 +46,22 @@
         [self.navigationBar.backBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         [self.navigationBar.backBtn setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
  
+=======
+//- (void)setTitle:(NSString *)title{
+//    objc_setAssociatedObject(self, &title, title, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//}
+//- (NSString *)title{
+//   return  objc_getAssociatedObject(self, &title);
+//}
+
+-(void)addSubView:(UIView *)view{
+    if ([self.view.subviews containsObject:self.navigationBar]) {
+        [self.view insertSubview:view belowSubview:self.navigationBar];
+>>>>>>> 99c0ed6090c38baca4af9c9a9ade2a64f0b9b307
     }else{
-        self.navigationBar.leftBtn.hidden = NO;
-        CGRect rect = self.navigationBar.backBtn.frame;
-        
-        self.navigationBar.backBtn.frame = CGRectMake(0, rect.origin.y, 52, rect.size.height);
-        [self.navigationBar.backBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
-        [self.navigationBar.backBtn setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
+        [self.view addSubview:view];
     }
+<<<<<<< HEAD
     objc_setAssociatedObject(self, @selector(leftBarHidden), @(leftBarHidden), OBJC_ASSOCIATION_ASSIGN);
     
 }
@@ -79,7 +87,14 @@
 }
 - (void)setBarBottomLineBackgroundColor:(UIColor *)barBottomLineBackgroundColor{
     objc_setAssociatedObject(self, @selector(barBottomLineBackgroundColor), barBottomLineBackgroundColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+=======
+>>>>>>> 99c0ed6090c38baca4af9c9a9ade2a64f0b9b307
 }
+
+
+
+#pragma mark -- view
+
 
 
 @end

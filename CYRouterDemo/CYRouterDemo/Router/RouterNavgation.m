@@ -29,7 +29,13 @@ SingletionM(RouterNavgation)
     UIViewController* currentViewController = self.currentViewController;
     return currentViewController.navigationController;
 }
-
+- (UIViewController *)rootNavigationViewController{
+    UINavigationController *nav = (UINavigationController *)[UIApplication sharedApplication].delegate.window.rootViewController;
+    if ([nav isKindOfClass:[UINavigationController class]]) {
+        return nav;
+    }
+    return [[RouterNavgation sharedRouterNavgation] currentNavigationViewController];
+}
 // 通过递归拿到当前控制器
 - (UIViewController*)currentViewControllerFrom:(UIViewController*)viewController {
     if ([viewController isKindOfClass:[UINavigationController class]]) {

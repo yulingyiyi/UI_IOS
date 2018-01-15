@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CYNavigationViewController.h"
+#import <RTRootNavigationController.h>
 #import "ViewController.h"
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    CYNavigationViewController *nav = [[CYNavigationViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    RTRootNavigationController *nav = [[RTRootNavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

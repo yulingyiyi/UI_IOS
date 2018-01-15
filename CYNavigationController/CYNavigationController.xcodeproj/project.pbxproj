@@ -15,11 +15,11 @@
 		1841A64F1FBD1D7600EAEBE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A64E1FBD1D7600EAEBE8 /* main.m */; };
 		1841A6591FBD1D7600EAEBE8 /* CYNavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A6581FBD1D7600EAEBE8 /* CYNavigationControllerTests.m */; };
 		1841A6641FBD1D7600EAEBE8 /* CYNavigationControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A6631FBD1D7600EAEBE8 /* CYNavigationControllerUITests.m */; };
-		1841A6741FBD1DDA00EAEBE8 /* CYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A6731FBD1DDA00EAEBE8 /* CYNavigationBar.m */; };
-		1841A6771FBD1E0A00EAEBE8 /* CYNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A6761FBD1E0A00EAEBE8 /* CYNavigationViewController.m */; };
-		1841A67A1FBD1E3800EAEBE8 /* UIViewController+navigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A6791FBD1E3800EAEBE8 /* UIViewController+navigationBar.m */; };
+		341479DB8F1C7039CA71B39B /* libPods-CYNavigationControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322C43E5703AC320238C88AF /* libPods-CYNavigationControllerTests.a */; };
+		4162CC8064EDB952463951B5 /* libPods-CYNavigationControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1912C2D04C78A0E11234D567 /* libPods-CYNavigationControllerUITests.a */; };
 		6E0FE2F51FBDB57600687D7F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FE2F41FBDB57600687D7F /* back.png */; };
 		6E0FE2F81FBDCBD800687D7F /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FE2F71FBDCBD800687D7F /* ViewController1.m */; };
+		7408B0653B8A75C3055103E2 /* libPods-CYNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9305C2AD9CBB148CE52EB11 /* libPods-CYNavigationController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,15 +56,18 @@
 		1841A65F1FBD1D7600EAEBE8 /* CYNavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYNavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1841A6631FBD1D7600EAEBE8 /* CYNavigationControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNavigationControllerUITests.m; sourceTree = "<group>"; };
 		1841A6651FBD1D7600EAEBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1841A6721FBD1DDA00EAEBE8 /* CYNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNavigationBar.h; sourceTree = "<group>"; };
-		1841A6731FBD1DDA00EAEBE8 /* CYNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNavigationBar.m; sourceTree = "<group>"; };
-		1841A6751FBD1E0A00EAEBE8 /* CYNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNavigationViewController.h; sourceTree = "<group>"; };
-		1841A6761FBD1E0A00EAEBE8 /* CYNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNavigationViewController.m; sourceTree = "<group>"; };
-		1841A6781FBD1E3800EAEBE8 /* UIViewController+navigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+navigationBar.h"; sourceTree = "<group>"; };
-		1841A6791FBD1E3800EAEBE8 /* UIViewController+navigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+navigationBar.m"; sourceTree = "<group>"; };
+		1912C2D04C78A0E11234D567 /* libPods-CYNavigationControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYNavigationControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21ED3B0D7EB5D30E38BC3297 /* Pods-CYNavigationController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYNavigationController.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYNavigationController/Pods-CYNavigationController.release.xcconfig"; sourceTree = "<group>"; };
+		2D866357DED2FF0781FAC1B4 /* Pods-CYNavigationControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYNavigationControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYNavigationControllerTests/Pods-CYNavigationControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		322C43E5703AC320238C88AF /* libPods-CYNavigationControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYNavigationControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6F24BD1634FB5A070DF4CE /* Pods-CYNavigationControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYNavigationControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYNavigationControllerUITests/Pods-CYNavigationControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E0FE2F41FBDB57600687D7F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		6E0FE2F61FBDCBD800687D7F /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		6E0FE2F71FBDCBD800687D7F /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		A667ABCCDC8B78758FBE5F2B /* Pods-CYNavigationControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYNavigationControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYNavigationControllerTests/Pods-CYNavigationControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E759A71847E31A3404444014 /* Pods-CYNavigationController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYNavigationController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYNavigationController/Pods-CYNavigationController.debug.xcconfig"; sourceTree = "<group>"; };
+		F9305C2AD9CBB148CE52EB11 /* libPods-CYNavigationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYNavigationController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F994F87DD9DC64C7B0E421BD /* Pods-CYNavigationControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYNavigationControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYNavigationControllerUITests/Pods-CYNavigationControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7408B0653B8A75C3055103E2 /* libPods-CYNavigationController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341479DB8F1C7039CA71B39B /* libPods-CYNavigationControllerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4162CC8064EDB952463951B5 /* libPods-CYNavigationControllerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,8 @@
 				1841A6571FBD1D7600EAEBE8 /* CYNavigationControllerTests */,
 				1841A6621FBD1D7600EAEBE8 /* CYNavigationControllerUITests */,
 				1841A63D1FBD1D7600EAEBE8 /* Products */,
+				9EFD93DC1FDB605A44365AF4 /* Pods */,
+				1AB89E712020A17995306FAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,15 +160,32 @@
 		1841A6711FBD1DBA00EAEBE8 /* CYNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				1841A6721FBD1DDA00EAEBE8 /* CYNavigationBar.h */,
-				1841A6731FBD1DDA00EAEBE8 /* CYNavigationBar.m */,
-				1841A6751FBD1E0A00EAEBE8 /* CYNavigationViewController.h */,
-				1841A6761FBD1E0A00EAEBE8 /* CYNavigationViewController.m */,
-				1841A6781FBD1E3800EAEBE8 /* UIViewController+navigationBar.h */,
-				1841A6791FBD1E3800EAEBE8 /* UIViewController+navigationBar.m */,
 				6E0FE2F41FBDB57600687D7F /* back.png */,
 			);
 			path = CYNavigationController;
+			sourceTree = "<group>";
+		};
+		1AB89E712020A17995306FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9305C2AD9CBB148CE52EB11 /* libPods-CYNavigationController.a */,
+				322C43E5703AC320238C88AF /* libPods-CYNavigationControllerTests.a */,
+				1912C2D04C78A0E11234D567 /* libPods-CYNavigationControllerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EFD93DC1FDB605A44365AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E759A71847E31A3404444014 /* Pods-CYNavigationController.debug.xcconfig */,
+				21ED3B0D7EB5D30E38BC3297 /* Pods-CYNavigationController.release.xcconfig */,
+				2D866357DED2FF0781FAC1B4 /* Pods-CYNavigationControllerTests.debug.xcconfig */,
+				A667ABCCDC8B78758FBE5F2B /* Pods-CYNavigationControllerTests.release.xcconfig */,
+				4B6F24BD1634FB5A070DF4CE /* Pods-CYNavigationControllerUITests.debug.xcconfig */,
+				F994F87DD9DC64C7B0E421BD /* Pods-CYNavigationControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1841A6681FBD1D7600EAEBE8 /* Build configuration list for PBXNativeTarget "CYNavigationController" */;
 			buildPhases = (
+				98F0B9A4BB0C045A10E355AA /* [CP] Check Pods Manifest.lock */,
 				1841A6381FBD1D7600EAEBE8 /* Sources */,
 				1841A6391FBD1D7600EAEBE8 /* Frameworks */,
 				1841A63A1FBD1D7600EAEBE8 /* Resources */,
+				2C8BFAFE5F5CB6C083CE2F0C /* [CP] Embed Pods Frameworks */,
+				7DF26B0C08CDC4C37D4D001E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1841A66B1FBD1D7600EAEBE8 /* Build configuration list for PBXNativeTarget "CYNavigationControllerTests" */;
 			buildPhases = (
+				9608CF4ED4363892C99D4854 /* [CP] Check Pods Manifest.lock */,
 				1841A6501FBD1D7600EAEBE8 /* Sources */,
 				1841A6511FBD1D7600EAEBE8 /* Frameworks */,
 				1841A6521FBD1D7600EAEBE8 /* Resources */,
+				3B4F425C893FD39D3FDEDD9F /* [CP] Embed Pods Frameworks */,
+				FA82FEE575FABB87B95383B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1841A66E1FBD1D7600EAEBE8 /* Build configuration list for PBXNativeTarget "CYNavigationControllerUITests" */;
 			buildPhases = (
+				274C1CF4796C76BF3DA275CE /* [CP] Check Pods Manifest.lock */,
 				1841A65B1FBD1D7600EAEBE8 /* Sources */,
 				1841A65C1FBD1D7600EAEBE8 /* Frameworks */,
 				1841A65D1FBD1D7600EAEBE8 /* Resources */,
+				BF758E0E8E848B1E188334C2 /* [CP] Embed Pods Frameworks */,
+				9F307FEA0DA013A2B9071100 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +326,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		274C1CF4796C76BF3DA275CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYNavigationControllerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C8BFAFE5F5CB6C083CE2F0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYNavigationController/Pods-CYNavigationController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B4F425C893FD39D3FDEDD9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYNavigationControllerTests/Pods-CYNavigationControllerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF26B0C08CDC4C37D4D001E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYNavigationController/Pods-CYNavigationController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9608CF4ED4363892C99D4854 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYNavigationControllerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98F0B9A4BB0C045A10E355AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYNavigationController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F307FEA0DA013A2B9071100 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYNavigationControllerUITests/Pods-CYNavigationControllerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF758E0E8E848B1E188334C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYNavigationControllerUITests/Pods-CYNavigationControllerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA82FEE575FABB87B95383B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYNavigationControllerTests/Pods-CYNavigationControllerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1841A6381FBD1D7600EAEBE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -299,11 +480,8 @@
 			files = (
 				1841A6441FBD1D7600EAEBE8 /* ViewController.m in Sources */,
 				6E0FE2F81FBDCBD800687D7F /* ViewController1.m in Sources */,
-				1841A6741FBD1DDA00EAEBE8 /* CYNavigationBar.m in Sources */,
-				1841A67A1FBD1E3800EAEBE8 /* UIViewController+navigationBar.m in Sources */,
 				1841A64F1FBD1D7600EAEBE8 /* main.m in Sources */,
 				1841A6411FBD1D7600EAEBE8 /* AppDelegate.m in Sources */,
-				1841A6771FBD1E0A00EAEBE8 /* CYNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,12 +642,18 @@
 		};
 		1841A6691FBD1D7600EAEBE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E759A71847E31A3404444014 /* Pods-CYNavigationController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CYNavigationController/Info.plist;
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+>>>>>>> 99c0ed6090c38baca4af9c9a9ade2a64f0b9b307
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cy.CYNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,12 +664,18 @@
 		};
 		1841A66A1FBD1D7600EAEBE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21ED3B0D7EB5D30E38BC3297 /* Pods-CYNavigationController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CYNavigationController/Info.plist;
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+>>>>>>> 99c0ed6090c38baca4af9c9a9ade2a64f0b9b307
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cy.CYNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +686,7 @@
 		};
 		1841A66C1FBD1D7600EAEBE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D866357DED2FF0781FAC1B4 /* Pods-CYNavigationControllerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +701,7 @@
 		};
 		1841A66D1FBD1D7600EAEBE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A667ABCCDC8B78758FBE5F2B /* Pods-CYNavigationControllerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +716,7 @@
 		};
 		1841A66F1FBD1D7600EAEBE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6F24BD1634FB5A070DF4CE /* Pods-CYNavigationControllerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CYNavigationControllerUITests/Info.plist;
@@ -537,6 +730,7 @@
 		};
 		1841A6701FBD1D7600EAEBE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F994F87DD9DC64C7B0E421BD /* Pods-CYNavigationControllerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CYNavigationControllerUITests/Info.plist;

@@ -23,7 +23,6 @@ static char dataCallBack;
 - (void)initData{
     
 }
-
 + (UIViewController *)initWithUrlString:(NSString *)urlString parameters:(NSDictionary *)parameters callBlock:(void (^)(NSDictionary *))callBlock{
     NSString *en = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     return [UIViewController initWithUrl:[NSURL URLWithString:en] parameters:parameters callBlock:callBlock];

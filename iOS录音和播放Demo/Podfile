@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'iOS录音和播放Demo' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for iOS录音和播放Demo
+  pod 'AliyunOSSiOS'
+  pod 'VODUpload'
+
+  target 'iOS录音和播放DemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'iOS录音和播放DemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -7,7 +7,7 @@
 //
 
 #import "CYNavigationViewController.h"
-
+#import "CYViewController.h"
 @interface CYNavigationViewController ()
 
 @end
@@ -22,12 +22,9 @@
 - (void)creatBarView{
     
     self.navigationBarHidden = YES;
-    self.barView = [[CYNavigationBar alloc] initWithFrame:CGRectMake(0, 0, KScreen_W, NavBarHeight)];
-    [self.topViewController.view addSubview:self.barView];
-    self.barView.title = self.topViewController.title;
-    if (self.viewControllers.count == 0) {
-        self.barView.backBtn.hidden = YES;
-    }
+//    self.barView = [CYNavigationBar defaultNavigitionBar];
+//    [self.topViewController.view addSubview:self.barView];
+//    self.barView.navigationItem.title = self.topViewController.title;
 }
 - (void)popGesture{
     
@@ -47,23 +44,14 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     CYNavigationBar *bar = [[CYNavigationBar alloc] initWithFrame:CGRectMake(0, 0, KScreen_W, NavBarHeight)];
     [viewController.view addSubview:bar];
-    [bar.backBtn addTarget:self action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
-    if (self.viewControllers.count == 0) {
-        bar.backBtn.hidden = YES;
-    }
+//    [bar.backBtn addTarget:self action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
+    
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
+        bar.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStyleDone target:self action:@selector(popViewControllerAnimated:)];;
     }
-    if (viewController.navigationBarBackgroundColor) {
-        bar.backgroundColor = viewController.navigationBarBackgroundColor;
-    }
-    if (viewController.navigationBarBackgroundColor) {
-        bar.lineView.backgroundColor = viewController.barBottomLineBackgroundColor;
-    }
-    bar.title = viewController.title;
-    viewController.navigationBar= bar;
-    viewController.leftBarHidden = YES;
-    
+    viewController.navigationBar.navigationItem.title = viewController.title;
+    viewController.navigationBar = bar;
     [super pushViewController:viewController animated:animated];
 }
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
