@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		005286C08709EAFFD1BD1EFD /* libPods-ASDisplayDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AABC2638E0D4EBE53B3B559E /* libPods-ASDisplayDemoUITests.a */; };
+		183004A0200F580D003D5ED0 /* CollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830049F200F580D003D5ED0 /* CollectionViewViewController.m */; };
+		183004A3200F5853003D5ED0 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183004A2200F5853003D5ED0 /* IndexViewController.m */; };
+		183004A6200F5BEC003D5ED0 /* CollectiontionCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 183004A5200F5BEC003D5ED0 /* CollectiontionCellNode.m */; };
+		183004A8200F6176003D5ED0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 183004A7200F6176003D5ED0 /* icon.png */; };
 		18A0358F200C3C06008A8A15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0358E200C3C06008A8A15 /* AppDelegate.m */; };
 		18A03592200C3C06008A8A15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A03591200C3C06008A8A15 /* ViewController.m */; };
 		18A03595200C3C06008A8A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A03593200C3C06008A8A15 /* Main.storyboard */; };
@@ -42,6 +46,13 @@
 		006C11F9929D7DB2C55ABF47 /* Pods-ASDisplayDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDisplayDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDisplayDemoUITests/Pods-ASDisplayDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		05274F768D3DBD9D2E7E82AD /* Pods-ASDisplayDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDisplayDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDisplayDemoUITests/Pods-ASDisplayDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		05810D882B6A354650BAF556 /* Pods-ASDisplayDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDisplayDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDisplayDemoTests/Pods-ASDisplayDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1830049E200F580D003D5ED0 /* CollectionViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewViewController.h; sourceTree = "<group>"; };
+		1830049F200F580D003D5ED0 /* CollectionViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewViewController.m; sourceTree = "<group>"; };
+		183004A1200F5853003D5ED0 /* IndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		183004A2200F5853003D5ED0 /* IndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		183004A4200F5BEC003D5ED0 /* CollectiontionCellNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectiontionCellNode.h; sourceTree = "<group>"; };
+		183004A5200F5BEC003D5ED0 /* CollectiontionCellNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiontionCellNode.m; sourceTree = "<group>"; };
+		183004A7200F6176003D5ED0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		18A0358A200C3C06008A8A15 /* ASDisplayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDisplayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A0358D200C3C06008A8A15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A0358E200C3C06008A8A15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,8 +136,15 @@
 				18A0358E200C3C06008A8A15 /* AppDelegate.m */,
 				18A03590200C3C06008A8A15 /* ViewController.h */,
 				18A03591200C3C06008A8A15 /* ViewController.m */,
+				1830049E200F580D003D5ED0 /* CollectionViewViewController.h */,
+				1830049F200F580D003D5ED0 /* CollectionViewViewController.m */,
+				183004A4200F5BEC003D5ED0 /* CollectiontionCellNode.h */,
+				183004A5200F5BEC003D5ED0 /* CollectiontionCellNode.m */,
 				18A035BF200C9D58008A8A15 /* TableCellNode.h */,
 				18A035C0200C9D58008A8A15 /* TableCellNode.m */,
+				183004A1200F5853003D5ED0 /* IndexViewController.h */,
+				183004A2200F5853003D5ED0 /* IndexViewController.m */,
+				183004A7200F6176003D5ED0 /* icon.png */,
 				18A03593200C3C06008A8A15 /* Main.storyboard */,
 				18A03596200C3C06008A8A15 /* Assets.xcassets */,
 				18A03598200C3C06008A8A15 /* LaunchScreen.storyboard */,
@@ -292,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183004A8200F6176003D5ED0 /* icon.png in Resources */,
 				18A0359A200C3C06008A8A15 /* LaunchScreen.storyboard in Resources */,
 				18A03597200C3C06008A8A15 /* Assets.xcassets in Resources */,
 				18A03595200C3C06008A8A15 /* Main.storyboard in Resources */,
@@ -468,8 +487,11 @@
 			files = (
 				18A035C1200C9D58008A8A15 /* TableCellNode.m in Sources */,
 				18A03592200C3C06008A8A15 /* ViewController.m in Sources */,
+				183004A0200F580D003D5ED0 /* CollectionViewViewController.m in Sources */,
 				18A0359D200C3C06008A8A15 /* main.m in Sources */,
 				18A0358F200C3C06008A8A15 /* AppDelegate.m in Sources */,
+				183004A3200F5853003D5ED0 /* IndexViewController.m in Sources */,
+				183004A6200F5BEC003D5ED0 /* CollectiontionCellNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7JMQ7E4P3;
 				INFOPLIST_FILE = ASDisplayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HongShang.ML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -654,6 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7JMQ7E4P3;
 				INFOPLIST_FILE = ASDisplayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HongShang.ML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
