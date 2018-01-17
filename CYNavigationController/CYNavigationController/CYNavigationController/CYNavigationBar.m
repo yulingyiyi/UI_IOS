@@ -14,7 +14,15 @@
 {
     self = [super initWithFrame:CGRectMake(0, 0, KScreen_W, NavBarHeight)];
     if (self) {
+<<<<<<< HEAD
+        
+//        [self addSubview:self.backBtn];
+//        [self addSubview:self.lineView];
+        self.backgroundColor = [UIColor redColor];
+        
+=======
         self.items = @[self.navigationItem];
+>>>>>>> 99c0ed6090c38baca4af9c9a9ade2a64f0b9b307
     }
     return self;
 }
@@ -27,6 +35,30 @@
     return bar;
 }
 //lazy
+<<<<<<< HEAD
+
+//-(UIView *)lineView{
+//    if (_lineView == nil) {
+//        _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, NavBarHeight - 0.5, KScreen_W, 0.5)];
+//        _lineView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
+//    }
+//    return _lineView;
+//}
+//- (UIButton *)backBtn{
+//    if (_backBtn == nil) {
+//        _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        _backBtn.frame = CGRectMake(0, NavBarHeight - 44, 50, 44);
+//        [_backBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+//    }
+//    return _backBtn;
+//}
+- (UINavigationItem *)navigationItem{
+    
+    if (_navigationItem ==nil) {
+        _navigationItem = [[UINavigationItem alloc] init];
+    }
+}
+=======
 -(void)layoutSubviews{
     [super layoutSubviews];
     // 这里为了适配iOS11，需要遍历所有的子控件，并向下移动状态栏的高度
@@ -63,4 +95,5 @@
     }
 }
 
+>>>>>>> 99c0ed6090c38baca4af9c9a9ade2a64f0b9b307
 @end

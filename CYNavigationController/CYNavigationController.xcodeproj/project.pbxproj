@@ -649,7 +649,11 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CYNavigationController/Info.plist;
+<<<<<<< HEAD
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+=======
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+>>>>>>> 99c0ed6090c38baca4af9c9a9ade2a64f0b9b307
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cy.CYNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -667,7 +671,11 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CYNavigationController/Info.plist;
+<<<<<<< HEAD
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+=======
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+>>>>>>> 99c0ed6090c38baca4af9c9a9ade2a64f0b9b307
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cy.CYNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME)";

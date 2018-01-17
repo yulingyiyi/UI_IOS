@@ -22,6 +22,8 @@
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(dddd) forControlEvents:UIControlEventTouchUpInside];
     btn.backgroundColor = [UIColor redColor];
+    self.title = @"firstVC";
+    self.navigationItem
     // Do any additional setup after loading the view, typically from a nib.
 }
 
