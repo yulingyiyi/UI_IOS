@@ -21,6 +21,7 @@
 		18A035A7200C3C06008A8A15 /* ASDisplayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A035A6200C3C06008A8A15 /* ASDisplayDemoTests.m */; };
 		18A035B2200C3C06008A8A15 /* ASDisplayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A035B1200C3C06008A8A15 /* ASDisplayDemoUITests.m */; };
 		18A035C1200C9D58008A8A15 /* TableCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A035C0200C9D58008A8A15 /* TableCellNode.m */; };
+		18DC0E9720108C2300567B66 /* InfoCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DC0E9620108C2300567B66 /* InfoCellNode.m */; };
 		4A12F6D0E88443CB175D9144 /* libPods-ASDisplayDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F93DD147984ED14B5B04A1F1 /* libPods-ASDisplayDemo.a */; };
 		C928B416C8213ADDCF492D0A /* libPods-ASDisplayDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77415643A0E0BFE403A17892 /* libPods-ASDisplayDemoTests.a */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,8 @@
 		18A035B3200C3C06008A8A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A035BF200C9D58008A8A15 /* TableCellNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellNode.h; sourceTree = "<group>"; };
 		18A035C0200C9D58008A8A15 /* TableCellNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellNode.m; sourceTree = "<group>"; };
+		18DC0E9520108C2300567B66 /* InfoCellNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoCellNode.h; sourceTree = "<group>"; };
+		18DC0E9620108C2300567B66 /* InfoCellNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoCellNode.m; sourceTree = "<group>"; };
 		1AA72CA7198F14B35808BF9C /* Pods-ASDisplayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDisplayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDisplayDemo/Pods-ASDisplayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		27638163F26C09A2D6E62DB8 /* Pods-ASDisplayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDisplayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDisplayDemo/Pods-ASDisplayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4EACCD02114748A89F77DB27 /* Pods-ASDisplayDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDisplayDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDisplayDemoTests/Pods-ASDisplayDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				183004A5200F5BEC003D5ED0 /* CollectiontionCellNode.m */,
 				18A035BF200C9D58008A8A15 /* TableCellNode.h */,
 				18A035C0200C9D58008A8A15 /* TableCellNode.m */,
+				18DC0E9520108C2300567B66 /* InfoCellNode.h */,
+				18DC0E9620108C2300567B66 /* InfoCellNode.m */,
 				183004A1200F5853003D5ED0 /* IndexViewController.h */,
 				183004A2200F5853003D5ED0 /* IndexViewController.m */,
 				183004A7200F6176003D5ED0 /* icon.png */,
@@ -488,6 +493,7 @@
 				18A035C1200C9D58008A8A15 /* TableCellNode.m in Sources */,
 				18A03592200C3C06008A8A15 /* ViewController.m in Sources */,
 				183004A0200F580D003D5ED0 /* CollectionViewViewController.m in Sources */,
+				18DC0E9720108C2300567B66 /* InfoCellNode.m in Sources */,
 				18A0359D200C3C06008A8A15 /* main.m in Sources */,
 				18A0358F200C3C06008A8A15 /* AppDelegate.m in Sources */,
 				183004A3200F5853003D5ED0 /* IndexViewController.m in Sources */,

@@ -6,7 +6,7 @@ target 'ASDisplayDemo' do
   # use_frameworks!
 
   # Pods for ASDisplayDemo
- pod 'AsyncDisplayKit'
+ pod 'Texture'
   target 'ASDisplayDemoTests' do
     inherit! :search_paths
     # Pods for testing
