@@ -19,7 +19,7 @@
 - (void)setupUI{
     
     InfoCellNode *node0 = [[InfoCellNode alloc] init];
-    node0.style.preferredSize = CGSizeMake(100, 50);
+    node0.style.preferredSize = CGSizeMake(200, 50);
     [self addSubnode:node0];
     
     
@@ -74,6 +74,7 @@
 - (ASButtonNode *)rightBtn{
     if (!_rightBtn) {
         _rightBtn = [[ASButtonNode alloc] init];
+        _rightBtn.style.spacingAfter = 20;
         [_rightBtn setTitle:@"right" withFont:[UIFont systemFontOfSize:14] withColor:[UIColor redColor] forState:UIControlStateNormal];
     }
     return _rightBtn;
@@ -94,13 +95,7 @@
 #pragma mark --layoutSpecThatFits
 - (ASLayoutSpec *)layoutSpecThatFits:(ASSizeRange)constrainedSize{
     // 当用户名和位置信息文本太长时,收缩堆放视图来适应屏幕,而不是将所有内容向右堆放
-    ASStackLayoutSpec *nameLocationStack = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:10 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsStart children:@[self.titleNode, self.descNode]];
-    nameLocationStack.style.flexShrink = 1.0;
-    nameLocationStack.style.flexGrow = 1.0;
-    
-//    //如果从服务器获取位置信息,并检查位置信息是否可用
-//        nameLocationStack.children = @[self.titleNode, self.descNode];
-   
+    ASStackLayoutSpec *nameLocationStack = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:10 justifyContent:ASStackLayoutJustifyContentSpaceBetween alignItems:ASStackLayoutAlignItemsStart children:@[self.titleNode, self.descNode]];
     
     //水平堆放
     ASStackLayoutSpec *headerStackSpec = [ASStackLayoutSpec   stackLayoutSpecWithDirection:ASStackLayoutDirectionHorizontal
@@ -110,13 +105,12 @@
                                                                                   children:@[nameLocationStack, self.rightBtn]];
     
     
-    
     ASStackLayoutSpec *cells = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:10 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsBaselineFirst children:_infoCellNodes];
 
     
     
     ASStackLayoutSpec *con = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:10 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsStart children:@[headerStackSpec,cells]];
-   
+
     return [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsMake(10, 10, 10, 10)
                                                   child:con];
 

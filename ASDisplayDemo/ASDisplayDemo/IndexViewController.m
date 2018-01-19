@@ -9,6 +9,9 @@
 #import "IndexViewController.h"
 #import "ViewController.h"
 #import "CollectionViewViewController.h"
+#import <MKFPSStatus.h>
+
+
 @interface IndexViewController ()
 
 @end
@@ -17,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+#ifdef DEBUG
+    [[MKFPSStatus sharedInstance] open];
+#endif
     // Do any additional setup after loading the view.
 }
 - (IBAction)tableClick:(UIButton *)sender {

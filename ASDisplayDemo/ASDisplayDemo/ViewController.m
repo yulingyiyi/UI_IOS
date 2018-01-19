@@ -47,6 +47,9 @@
     return cellNodeBlock;
 }
 
+- (void)tableNode:(ASTableNode *)tableNode didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableNode deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 
 - (void)didReceiveMemoryWarning {

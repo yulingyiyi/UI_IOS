@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FA9EAF3F0041A88CB55D09291FCD390E'
-               BlueprintName = 'Texture'
+               BlueprintIdentifier = 'C9EB5585BC428064E648CFA3CDD0849D'
+               BlueprintName = 'MKFPSStatus'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libTexture.a'>
+               BuildableName = 'libMKFPSStatus.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
